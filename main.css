@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  border: none;
+  outline: none;
+  /*font-family: 'Press Start 2P', sans-serif;*/
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.calculator{
+  background: rgba(41,41,41,1);
+  width: 250px;
+  height: 350px;
+}
+.display-screen{
+  height: 25%;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+#output{
+  margin: 0.5em;
+  font-size: 1.5em;
+}
+.buttons-container{
+  height: 75%;
+}
+.row{
+  display: flex;
+  height:calc(100%/5);
+}
+button{
+  margin: 0;
+  background: rgba(224,224,224,1);
+  width: 25%;
+  font-family: sans-serif;
+  border: black solid 1px;
+  font-size: 1.5em;
+}
+.last-column{
+  background: orange;
+  color: white;
+}

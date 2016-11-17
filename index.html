@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="main.css" media="screen" title="no title">
+    <title>Calculator</title>
+  </head>
+  <body>
+      <section class="calculator">
+
+          <div class="display-screen">
+            <p id="output">
+              0
+            </p>
+          </div>
+          <section class="buttons-container">
+            <div class="row row-one">
+              <button type="button" name="button" onclick="allClear()">AC</button>
+              <button type="button" name="button" onclick="aClear()">C</button>
+              <button type="button" name="button" onclick="percent()">%</button>
+              <button class="last-column" type="button" name="button" onclick="addOperator('+')">+</button>
+            </div>
+            <div class="row row-one">
+              <button type="button" name="button" onclick="insert(7)">7</button>
+              <button type="button" name="button" onclick="insert(8)">8</button>
+              <button type="button" name="button" onclick="insert(9)">9</button>
+              <button class="last-column" type="button" name="button" onclick="addOperator('-')">-</button>
+            </div>
+            <div class="row row-one">
+              <button type="button" name="button" onclick="insert(4)">4</button>
+              <button type="button" name="button" onclick="insert(5)">5</button>
+              <button type="button" name="button" onclick="insert(6)">6</button>
+              <button class="last-column" type="button" name="button" onclick="addOperator('*')">x</button>
+            </div>
+            <div class="row row-one">
+              <button type="button" name="button" onclick="insert(1)">1</button>
+              <button type="button" name="button" onclick="insert(2)">2</button>
+              <button type="button" name="button" onclick="insert(3)">3</button>
+              <button class="last-column" type="button" name="button" onclick="addOperator('/')">÷</button>
+            </div>
+            <div class="row row-one">
+              <button type="button" name="button" onclick="insert(0)">0</button>
+              <button type="button" name="button" onclick="insert('.')">.</button>
+              <button type="button" name="button" onclick="toggleSign()">±</button>
+              <button class="last-column" type="button" name="button" onclick="equals()">=</button>
+            </div>
+
+          </section>
+      </section>
+      <script src="calculator.js" charset="utf-8"></script>
+  </body>
+</html>
